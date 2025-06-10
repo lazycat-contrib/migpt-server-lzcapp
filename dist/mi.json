@@ -1,0 +1,12 @@
+{
+  "mina": {
+    "pass": {
+      "passToken": "你的 passToken 填到这里"
+    }
+  },
+  "miiot": {
+    "pass": {
+      "passToken": "你的 passToken 填到这里"
+    }
+  }
+}
