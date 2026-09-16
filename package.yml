@@ -1,0 +1,14 @@
+package: cloud.lazycat.app.migpt-server
+version: 1.12.0
+name: MiGPT GUI
+description: "安全、快速的给你的小爱音箱接入人工智能。"
+min_os_version: "1.5.0"
+homepage: https://github.com/lmk123/migpt-cli
+author: lmk123
+locales:
+  zh:
+    description: "安全、快速的给你的小爱音箱接入人工智能。"
+    name: MiGPT GUI
+  en:
+    description: "Safely and quickly connect artificial intelligence to your Xiaomi AI speaker."
+    name: MiGPT GUI

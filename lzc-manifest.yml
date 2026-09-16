@@ -1,17 +1,13 @@
-lzc-sdk-version: "0.1"
-name: MiGPT GUI
-package: cloud.lazycat.app.migpt-server
-version: 1.12.0
-description: 安全、快速的给你的小爱音箱接入人工智能。
-homepage: https://github.com/lmk123/migpt-cli
-author: lmk123
 application:
   subdomain: migpt-server
   background_task: true
-  routes:
-    - /=http://migpt-server:36592/
+  upstreams:
+    - location: /
+      backend: http://migpt-server:36592/
+
 services:
   migpt-server:
+    # upstream: lmk123/migpt-server:1.12.0
     image: docker.1ms.run/lmk123/migpt-server:1.12.0
     binds:
       - /lzcapp/var/data:/root/.migptgui/default/
